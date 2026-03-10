@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nucleus | Have Your Best Baby — Modern IVF Genetic Optimization</title>
+  <meta name="description" content="Give your baby the best start with Nucleus IVF+. Advanced genetic analysis for embryo selection. Featured in WSJ, Forbes, and Axios. Backed by $32M in funding.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1a1a1a;
+      background: #ffffff;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== BRAND COLORS ===== */
+    :root {
+      --bg-white: #ffffff;
+      --bg-cream: #fcfbf5;
+      --bg-warm: #f5f2e6;
+      --bg-beige: #ece9d9;
+      --bg-dark: #1a1a1a;
+      --bg-dark-mid: #242424;
+      --text-dark: #1a1a1a;
+      --text-light: #ffffff;
+      --text-muted: #6b6b6b;
+      --accent-gold: #fdd17c;
+      --accent-olive: #8e8564;
+      --accent-teal: #719c9e;
+      --accent-green: #d3dac9;
+      --btn-radius: 500px;
+    }
+
+    /* ===== TYPOGRAPHY ===== */
+    h1, h2, h3, h4 {
+      font-family: 'Inter Tight', 'Inter', sans-serif;
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+    h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); }
+    h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
+    p { font-size: 1.05rem; line-height: 1.7; color: var(--text-muted); }
+
+    /* ===== LAYOUT ===== */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .section { padding: 100px 0; }
+    .text-center { text-align: center; }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 36px;
+      border-radius: var(--btn-radius);
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      border: none;
+      transition: all 0.3s ease;
+    }
+    .btn-primary {
+      background: var(--text-dark);
+      color: var(--text-light);
+    }
+    .btn-primary:hover { background: #333; transform: translateY(-1px); }
+    .btn-gold {
+      background: var(--accent-gold);
+      color: var(--text-dark);
+    }
+    .btn-gold:hover { background: #f5c45a; transform: translateY(-1px); }
+    .btn-outline {
+      background: transparent;
+      color: var(--text-dark);
+      border: 1.5px solid var(--text-dark);
+    }
+    .btn-outline:hover { background: var(--text-dark); color: var(--text-light); }
+    .btn-white {
+      background: var(--text-light);
+      color: var(--text-dark);
+    }
+    .btn-white:hover { background: #f0f0f0; transform: translateY(-1px); }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      padding: 16px 0;
+    }
+    .navbar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: 'Inter Tight', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-logo svg { width: 28px; height: 28px; }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text-dark); }
+    .nav-cta { margin-left: 8px; }
+    .mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+    .mobile-toggle span { display: block; width: 24px; height: 2px; background: var(--text-dark); margin: 5px 0; transition: 0.3s; }
+
+    /* ===== HERO ===== */
+    .hero {
+      padding-top: 140px;
+      padding-bottom: 80px;
+      background: var(--bg-cream);
+      overflow: hidden;
+      position: relative;
+    }
+    .hero .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .hero-content { max-width: 560px; }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent-gold);
+      color: var(--text-dark);
+      padding: 8px 18px;
+      border-radius: var(--btn-radius);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+    .hero h1 { color: var(--text-dark); margin-bottom: 20px; }
+    .hero h1 em {
+      font-style: normal;
+      background: linear-gradient(135deg, var(--accent-olive), var(--accent-teal));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero p { font-size: 1.15rem; margin-bottom: 36px; color: var(--text-muted); }
+    .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+    .hero-image {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+    }
+    .hero-image img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 24px;
+    }
+
+    /* ===== SOCIAL PROOF BAR ===== */
+    .social-proof-bar {
+      padding: 48px 0;
+      background: var(--bg-white);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .social-proof-bar p {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+    .logo-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .logo-row img {
+      height: 28px;
+      opacity: 0.7;
+      filter: grayscale(100%);
+      transition: all 0.3s;
+    }
+    .logo-row img:hover { opacity: 1; filter: grayscale(0%); }
+
+    /* ===== PROBLEM / PAIN SECTION ===== */
+    .problem-section {
+      background: var(--bg-dark);
+      color: var(--text-light);
+      padding: 100px 0;
+    }
+    .problem-section h2 { color: var(--text-light); margin-bottom: 20px; }
+    .problem-section p { color: rgba(255,255,255,0.7); }
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 56px;
+    }
+    .problem-card {
+      background: var(--bg-dark-mid);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 36px;
+    }
+    .problem-card .icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(253,209,124,0.12);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+    }
+    .problem-card h3 {
+      color: var(--text-light);
+      margin-bottom: 12px;
+      font-size: 1.15rem;
+    }
+    .problem-card p { font-size: 0.95rem; color: rgba(255,255,255,0.55); }
+
+    /* ===== SOLUTION SECTION ===== */
+    .solution-section { background: var(--bg-cream); padding: 100px 0; }
+    .solution-header { max-width: 700px; margin: 0 auto 56px; }
+    .solution-header h2 { margin-bottom: 16px; }
+    .solution-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .solution-card {
+      background: var(--bg-white);
+      border-radius: 20px;
+      padding: 40px 32px;
+      border: 1px solid rgba(0,0,0,0.06);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .solution-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    }
+    .solution-card .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--accent-gold);
+      color: var(--text-dark);
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+    .solution-card h3 { margin-bottom: 12px; }
+    .solution-card p { font-size: 0.95rem; }
+    .solution-card .price-tag {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 6px 16px;
+      background: var(--bg-warm);
+      border-radius: var(--btn-radius);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent-olive);
+    }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials-section { padding: 100px 0; background: var(--bg-white); }
+    .testimonials-section h2 { margin-bottom: 16px; }
+    .testimonials-section > .container > p { margin-bottom: 56px; }
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .testimonial-card {
+      background: var(--bg-cream);
+      border-radius: 20px;
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+    }
+    .testimonial-card .stars { color: var(--accent-gold); font-size: 1.1rem; margin-bottom: 16px; }
+    .testimonial-card blockquote {
+      font-size: 1.05rem;
+      color: var(--text-dark);
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .testimonial-card .author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .testimonial-card .author-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--accent-green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--text-dark);
+    }
+    .testimonial-card .author-info .name { font-weight: 600; font-size: 0.95rem; color: var(--text-dark); }
+    .testimonial-card .author-info .role { font-size: 0.8rem; color: var(--text-muted); }
+
+    /* ===== FEATURED STORY ===== */
+    .featured-story {
+      background: var(--bg-warm);
+      padding: 100px 0;
+    }
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .story-image {
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .story-image img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+    .story-content .label {
+      display: inline-block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 600;
+      color: var(--accent-olive);
+      margin-bottom: 16px;
+    }
+    .story-content h2 { margin-bottom: 20px; }
+    .story-content p { margin-bottom: 28px; }
+
+    /* ===== LEAD MAGNET ===== */
+    .lead-magnet {
+      background: var(--bg-dark);
+      padding: 80px 0;
+    }
+    .lead-magnet-inner {
+      max-width: 680px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .lead-magnet h2 { color: var(--text-light); margin-bottom: 16px; }
+    .lead-magnet p { color: rgba(255,255,255,0.65); margin-bottom: 32px; }
+    .lead-magnet .form-row {
+      display: flex;
+      gap: 12px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .lead-magnet input[type="email"] {
+      flex: 1;
+      padding: 16px 24px;
+      border-radius: var(--btn-radius);
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.08);
+      color: var(--text-light);
+      font-size: 0.95rem;
+      font-family: 'Inter', sans-serif;
+      outline: none;
+    }
+    .lead-magnet input[type="email"]::placeholder { color: rgba(255,255,255,0.4); }
+    .lead-magnet input[type="email"]:focus { border-color: var(--accent-gold); }
+
+    /* ===== PRICING / OFFER ===== */
+    .pricing-section { padding: 100px 0; background: var(--bg-cream); }
+    .pricing-header { max-width: 700px; margin: 0 auto 56px; }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .pricing-card {
+      background: var(--bg-white);
+      border-radius: 20px;
+      padding: 40px 32px;
+      border: 1px solid rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .pricing-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    }
+    .pricing-card.featured {
+      border: 2px solid var(--accent-gold);
+      position: relative;
+    }
+    .pricing-card.featured::before {
+      content: "Most Popular";
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent-gold);
+      color: var(--text-dark);
+      padding: 4px 20px;
+      border-radius: var(--btn-radius);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .pricing-card h3 { margin-bottom: 8px; }
+    .pricing-card .price {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+      font-family: 'Inter Tight', sans-serif;
+    }
+    .pricing-card .price-note { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px; }
+    .pricing-card ul {
+      list-style: none;
+      margin-bottom: 32px;
+      flex: 1;
+    }
+    .pricing-card ul li {
+      padding: 8px 0;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .pricing-card ul li::before {
+      content: "\2713";
+      color: var(--accent-teal);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .pricing-card .btn { width: 100%; }
+
+    /* ===== AUTHORITY / ABOUT ===== */
+    .authority-section { padding: 100px 0; background: var(--bg-white); }
+    .authority-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .authority-image { border-radius: 20px; overflow: hidden; }
+    .authority-image img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+    .authority-content .label {
+      display: inline-block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 600;
+      color: var(--accent-olive);
+      margin-bottom: 16px;
+    }
+    .authority-content h2 { margin-bottom: 20px; }
+    .authority-content p { margin-bottom: 20px; }
+    .authority-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 32px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(0,0,0,0.08);
+    }
+    .authority-stats .stat-num {
+      font-family: 'Inter Tight', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+    .authority-stats .stat-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* ===== FINAL CTA ===== */
+    .final-cta {
+      background: var(--bg-dark);
+      padding: 100px 0;
+      text-align: center;
+    }
+    .final-cta h2 { color: var(--text-light); margin-bottom: 20px; }
+    .final-cta p { color: rgba(255,255,255,0.6); margin-bottom: 40px; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .final-cta .btn-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--bg-dark);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 48px 0 32px;
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-logo {
+      font-family: 'Inter Tight', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-light);
+    }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-size: 0.85rem; color: rgba(255,255,255,0.5); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--text-light); }
+    .footer-copy {
+      text-align: center;
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.35);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 968px) {
+      .hero .container { grid-template-columns: 1fr; gap: 40px; }
+      .hero-content { max-width: 100%; }
+      .hero-image img { height: 400px; }
+      .problem-grid,
+      .solution-grid,
+      .testimonial-grid,
+      .pricing-grid { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
+      .story-grid,
+      .authority-grid { grid-template-columns: 1fr; gap: 40px; }
+      .authority-image img,
+      .story-image img { height: 300px; }
+      .authority-stats { gap: 24px; }
+      .nav-links { display: none; }
+      .mobile-toggle { display: block; }
+      .navbar.open .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--bg-white);
+        padding: 24px;
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+        gap: 16px;
+      }
+    }
+    @media (max-width: 600px) {
+      .hero { padding-top: 110px; padding-bottom: 60px; }
+      .section { padding: 72px 0; }
+      .lead-magnet .form-row { flex-direction: column; }
+      .hero-buttons { flex-direction: column; }
+      .hero-buttons .btn { width: 100%; }
+      .logo-row { gap: 28px; }
+      .logo-row img { height: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+          <path fill="#1a1a1a" d="m21.466 5.071.004 10.915c.001 1.725-1.834 2.83-3.358 2.024L7.17 12.223a15.1 15.1 0 0 1 3.1-3.64l8.582 7.932c.455.42 1.172-.036.985-.626L16.509 5.41a15 15 0 0 1 4.956-.338M18.496 34.925l-.005-10.86c0-1.724 1.834-2.83 3.359-2.023l10.946 5.79a15 15 0 0 1-3.116 3.626l-8.57-7.921c-.455-.42-1.172.035-.985.625l3.316 10.441a15 15 0 0 1-4.945.322M23.492 18.898 31.44 10.3a15 15 0 0 0-3.64-3.113l-5.804 10.972c-.806 1.524.3 3.359 2.024 3.358l10.905-.005a15.2 15.2 0 0 0-.324-4.958l-10.484 3.33c-.59.187-1.045-.53-.625-.985M5.07 18.54l10.872-.004c1.725 0 2.83 1.834 2.024 3.358L12.192 32.81a15 15 0 0 1-3.627-3.103l7.906-8.553c.42-.455-.036-1.172-.626-.985L5.408 23.484a15 15 0 0 1-.337-4.943"/>
+        </svg>
+        Nucleus
+      </a>
+      <div class="nav-links">
+        <a href="#solution">IVF+</a>
+        <a href="#pricing">Products</a>
+        <a href="#testimonials">Stories</a>
+        <a href="#authority">Research</a>
+        <a href="#booking" class="btn btn-primary btn-sm nav-cta" style="padding: 10px 24px; font-size: 0.85rem;">Get Started</a>
+      </div>
+      <button class="mobile-toggle" onclick="document.getElementById('navbar').classList.toggle('open')" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">Featured in The Wall Street Journal</div>
+        <h1>Have your <em>best</em> baby.</h1>
+        <p>Modern IVF to give your baby the best start. Nucleus IVF+ is the most advanced genetic analysis platform for embryo selection, helping thousands of families make informed choices about their future children.</p>
+        <div class="hero-buttons">
+          <a href="#booking" class="btn btn-primary">Start your journey</a>
+          <a href="#solution" class="btn btn-outline">Learn more</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://framerusercontent.com/images/SXTbUCtQqUM556krZR66y9yr1iw.jpg" alt="Happy family with baby, representing the promise of Nucleus IVF+">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOCIAL PROOF BAR ===== -->
+  <section class="social-proof-bar text-center">
+    <div class="container">
+      <p>As seen in</p>
+      <div class="logo-row">
+        <img src="https://framerusercontent.com/images/2fYuaaVC9colbocrN3CvzfACCQ.png" alt="Axios logo">
+        <img src="https://framerusercontent.com/images/MwovRpTD21l7jBep0PAjqlXg8W4.png" alt="Forbes logo">
+        <img src="https://framerusercontent.com/images/YSRRcOcJJkSPeStCg7f8asyrQ4.png" alt="Wall Street Journal logo">
+        <img src="https://framerusercontent.com/images/Jxhmuy0jPwSzGYKZFkE6sdm4Moc.png" alt="CBS News logo">
+        <img src="https://framerusercontent.com/images/WTaWheOlCWcBUAvSGXpPpXjQUzc.png" alt="TechCrunch logo">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROBLEM / PAIN SECTION ===== -->
+  <section class="problem-section section" id="problem">
+    <div class="container text-center">
+      <h2>IVF is one of the most important<br>decisions you'll ever make.</h2>
+      <p style="max-width: 640px; margin: 0 auto;">Yet most families make it with incomplete information. Standard genetic screening only scratches the surface of what's possible.</p>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="icon">&#x1F50D;</div>
+          <h3>Limited genetic insight</h3>
+          <p>Traditional PGT only tests for a handful of conditions, leaving thousands of hereditary risks unexamined in your embryos.</p>
+        </div>
+        <div class="problem-card">
+          <div class="icon">&#x2753;</div>
+          <h3>Which embryo to choose?</h3>
+          <p>When you have multiple viable embryos, the question becomes: which one gives your child the best possible start in life?</p>
+        </div>
+        <div class="problem-card">
+          <div class="icon">&#x1F4CA;</div>
+          <h3>Outdated technology</h3>
+          <p>Most fertility clinics still rely on decades-old genetic testing methods that don't leverage modern genomic science.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOLUTION SECTION ===== -->
+  <section class="solution-section section" id="solution">
+    <div class="container">
+      <div class="solution-header text-center">
+        <h2>The modern approach to IVF.</h2>
+        <p>Nucleus IVF+ gives you a complete picture of each embryo's genetic profile, so you can make the most informed decision for your family.</p>
+      </div>
+      <div class="solution-grid">
+        <div class="solution-card">
+          <div class="step-num">1</div>
+          <h3>Complete DNA analysis</h3>
+          <p>Full whole-genome sequencing of both parents and up to 20 embryos, examining over 2,000 hereditary conditions.</p>
+        </div>
+        <div class="solution-card">
+          <div class="step-num">2</div>
+          <h3>Advanced polygenic scoring</h3>
+          <p>Powered by Origin, our family of nine advanced genetic models that predict health outcomes more accurately than any existing model.</p>
+        </div>
+        <div class="solution-card">
+          <div class="step-num">3</div>
+          <h3>Clear, actionable reports</h3>
+          <p>See and understand the complete genetic profile of each embryo across cancers, chronic conditions, and 40+ additional analyses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials-section section text-center" id="testimonials">
+    <div class="container">
+      <h2>Nucleus Stories</h2>
+      <p>We've helped thousands of families make informed decisions.</p>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Simple, easy. The whole process was straightforward and gave us peace of mind about our decision."</blockquote>
+          <div class="author">
+            <div class="author-avatar">JB</div>
+            <div class="author-info">
+              <div class="name">Jeffery B.</div>
+              <div class="role">IVF+ Patient</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"It's important to do. As a physician, I understand the value of comprehensive genetic screening. Nucleus takes it to another level."</blockquote>
+          <div class="author">
+            <div class="author-avatar">DH</div>
+            <div class="author-info">
+              <div class="name">Dr. Hoeflinger</div>
+              <div class="role">Physician</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Much better insights than anything else we'd seen. It helped us feel confident in our embryo selection."</blockquote>
+          <div class="author">
+            <div class="author-avatar">KR</div>
+            <div class="author-info">
+              <div class="name">Kelly R.</div>
+              <div class="role">IVF+ Patient</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED STORY ===== -->
+  <section class="featured-story section">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-image">
+          <img src="https://framerusercontent.com/images/I7ZJe2pPYTLYuGU98yaiMJJbMpw.jpg" alt="Family planning with Nucleus genetic insights">
+        </div>
+        <div class="story-content">
+          <span class="label">Nucleus Stories</span>
+          <h2>The question arose: which of the 20 embryos should we implant?</h2>
+          <p>Sara &amp; Mark faced the challenge every IVF family knows. With Nucleus IVF+, they were able to see the complete genetic profile of all 20 embryos and make a confident, informed choice for their family's future.</p>
+          <a href="#booking" class="btn btn-gold">Read their story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LEAD MAGNET ===== -->
+  <section class="lead-magnet section" id="guide">
+    <div class="lead-magnet-inner container">
+      <h2>Not ready yet? Get our free guide.</h2>
+      <p>Download "The Modern Parent's Guide to IVF Genetic Testing" and learn what questions to ask your fertility clinic about advanced embryo screening.</p>
+      <div class="form-row">
+        <input type="email" placeholder="Enter your email" aria-label="Email address">
+        <button class="btn btn-gold" type="button">Get the guide</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING / OFFER ===== -->
+  <section class="pricing-section section" id="pricing">
+    <div class="container">
+      <div class="pricing-header text-center">
+        <h2>Protect you and your loved ones.</h2>
+        <p>Life-changing insights, all in one place. Choose the product that's right for your family.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Health</h3>
+          <div class="price">$499</div>
+          <div class="price-note">Whole-genome health test</div>
+          <ul>
+            <li>Complete whole-genome sequencing</li>
+            <li>Comprehensive health risk analysis</li>
+            <li>Carrier status for hereditary conditions</li>
+            <li>Pharmacogenomics insights</li>
+            <li>Ongoing updates as science advances</li>
+          </ul>
+          <a href="#booking" class="btn btn-outline">Learn more</a>
+        </div>
+        <div class="pricing-card featured">
+          <h3>IVF+</h3>
+          <div class="price">$30,000</div>
+          <div class="price-note">Complete embryo optimization</div>
+          <ul>
+            <li>Full DNA scans of both parents</li>
+            <li>Analysis of up to 20 embryos</li>
+            <li>2,000+ hereditary conditions screened</li>
+            <li>40+ additional genetic analyses</li>
+            <li>Advanced polygenic risk scoring</li>
+            <li>Dedicated genetic counselor</li>
+          </ul>
+          <a href="#booking" class="btn btn-primary">Get started</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Preview</h3>
+          <div class="price">Contact us</div>
+          <div class="price-note">See your future baby before pregnancy</div>
+          <ul>
+            <li>Family preview based on both parents' DNA</li>
+            <li>Trait prediction and health insights</li>
+            <li>Plan your family the modern way</li>
+            <li>Comprehensive genetic compatibility</li>
+          </ul>
+          <a href="#booking" class="btn btn-outline">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AUTHORITY / ABOUT ===== -->
+  <section class="authority-section section" id="authority">
+    <div class="container">
+      <div class="authority-grid">
+        <div class="authority-image">
+          <img src="https://framerusercontent.com/images/5nfMM5E0UI4dIGe7SQ9tn6eHQb4.jpg" alt="Nucleus Genomics team and research">
+        </div>
+        <div class="authority-content">
+          <span class="label">Pioneering genetic research</span>
+          <h2>Built by world-class scientists. Backed by visionary investors.</h2>
+          <p>Founded by Kian Sadeghi, Nucleus Genomics has raised $32 million from investors including Founders Fund, Seven Seven Six (Alexis Ohanian), and Balaji Srinivasan to build the most advanced genetic optimization platform in the world.</p>
+          <p>Our IVF+ network includes top fertility clinics like Beverly Hills Fertility and Neway Fertility in New York City, with international expansion into Mexico and beyond.</p>
+          <div class="authority-stats">
+            <div>
+              <div class="stat-num">$32M</div>
+              <div class="stat-label">Total funding raised</div>
+            </div>
+            <div>
+              <div class="stat-num">2,000+</div>
+              <div class="stat-label">Conditions screened</div>
+            </div>
+            <div>
+              <div class="stat-num">1000s</div>
+              <div class="stat-label">Families helped</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="final-cta section" id="booking">
+    <div class="container">
+      <h2>Don't let your family history<br>define your family's future.</h2>
+      <p>Start your journey today and give your baby the best possible start in life with Nucleus.</p>
+      <div class="btn-row">
+        <a href="https://mynucleus.com" class="btn btn-gold" target="_blank" rel="noopener">Start your journey</a>
+        <a href="#guide" class="btn btn-white">Download free guide</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Nucleus</div>
+        <div class="footer-links">
+          <a href="https://mynucleus.com" target="_blank" rel="noopener">Website</a>
+          <a href="#pricing">Products</a>
+          <a href="#testimonials">Stories</a>
+          <a href="#authority">Research</a>
+          <a href="#booking">Contact</a>
+        </div>
+      </div>
+      <div class="footer-copy">&copy; 2026 Nucleus Genomics, Inc. All rights reserved.</div>
+    </div>
+  </footer>
+
+</body>
+</html>
