@@ -1,198 +1,261 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nucleus IVF+ | Personalized Embryo Planning Quiz</title>
-  <meta name="description" content="Take a personalized IVF+ planning quiz inspired by Nucleus Genomics to understand whether Nucleus Preview, Embryo, or an IVF+ clinic consult is your smartest next step." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nucleus Genomics - Personalized Growth Funnel</title>
+  <meta name="description" content="A personalized, high-converting landing page concept for Nucleus Genomics, built using public on-site language and the JayCampbell.com brand system." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&amp;family=Poppins:wght@400;500;600;700;800&amp;family=Radio+Canada+Big:wght@400;600;700&amp;display=swap" />
+
   <style>
-    :root{--ink:#242424;--ink-soft:#575757;--sand:#fcfbf5;--sand-2:#f5f2e6;--sand-3:#ece9d9;--taupe:#8e8564;--teal:#719c9e;--teal-deep:#31585a;--accent:#deb15c;--line:rgba(36,36,36,.09);--white:#fff;--heading:"Merriweather","Georgia",serif;--body:"Space Grotesk","Avenir Next","Segoe UI",sans-serif;--mono:"Fragment Mono","SFMono-Regular","Consolas",monospace;--radius-xl:34px;--radius-lg:22px;--shadow:0 24px 70px rgba(52,47,35,.10)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:var(--body);background:radial-gradient(900px 560px at 100% 0%,rgba(177,214,216,.34),transparent 65%),radial-gradient(780px 420px at 0% 20%,rgba(222,177,92,.18),transparent 62%),linear-gradient(180deg,#fff,var(--sand));line-height:1.55}img{max-width:100%;display:block}a{color:inherit}.container{width:min(1180px,92vw);margin:0 auto}
-    .nav{position:sticky;top:0;z-index:60;background:rgba(252,251,245,.78);backdrop-filter:blur(14px);border-bottom:1px solid rgba(36,36,36,.06)}.nav-inner{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:18px}.logo-lockup{display:inline-flex;align-items:center;gap:12px;text-decoration:none}.logo-lockup svg{width:184px;height:auto}.nav-cta{display:flex;align-items:center;gap:10px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:14px 22px;font:600 14px/1 var(--body);text-decoration:none;cursor:pointer;transition:transform .22s ease,box-shadow .22s ease,background .22s ease;white-space:nowrap}.btn-primary{color:var(--white);background:linear-gradient(135deg,var(--ink),var(--teal-deep));box-shadow:0 18px 40px rgba(36,36,36,.18)}.btn-secondary{color:var(--ink);background:rgba(255,255,255,.72);border:1px solid rgba(36,36,36,.08)}.btn:hover{transform:translateY(-1px)}
-    .hero{padding:42px 0 28px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:stretch}.panel{background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:var(--radius-xl);box-shadow:var(--shadow);overflow:hidden;position:relative}.hero-copy{padding:34px;background:linear-gradient(180deg,rgba(255,255,255,.70),rgba(255,255,255,.88)),linear-gradient(135deg,rgba(177,214,216,.18),rgba(222,177,92,.12))}.eyebrow{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:8px 14px;background:rgba(142,133,100,.12);color:var(--taupe);font:700 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
-    h1,h2,h3{margin:0 0 12px;font-family:var(--heading);line-height:1.06;letter-spacing:-.02em;font-weight:400}h1{font-size:clamp(2.4rem,5vw,4.7rem)}h2{font-size:clamp(1.8rem,3vw,3rem)}h3{font-size:clamp(1.2rem,2vw,1.55rem)}.lede{font-size:1.08rem;color:var(--ink-soft);max-width:60ch}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 22px}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.metric{padding:16px 14px;border-radius:20px;background:rgba(255,255,255,.82);border:1px solid rgba(36,36,36,.06)}.metric strong{display:block;font:700 1.35rem/1 var(--body);margin-bottom:6px}
-    .hero-visual{display:grid;grid-template-rows:1fr auto;min-height:100%;background:linear-gradient(180deg,rgba(245,242,230,.72),rgba(255,255,255,.92))}.hero-visual img{width:100%;height:100%;min-height:390px;object-fit:cover}.visual-card{margin:18px;margin-top:-82px;padding:18px;border-radius:28px;background:rgba(255,255,255,.92);border:1px solid rgba(36,36,36,.07);box-shadow:0 18px 40px rgba(36,36,36,.12)}.visual-card .label{font:700 12px/1 var(--body);letter-spacing:.10em;text-transform:uppercase;color:var(--taupe);margin-bottom:10px}.signal-list{display:grid;gap:10px}.signal{display:flex;gap:10px;align-items:flex-start;font-size:.96rem;color:var(--ink-soft)}.signal b{color:var(--ink);font-weight:700}.signal .dot{width:10px;height:10px;border-radius:999px;background:linear-gradient(135deg,var(--accent),var(--teal));margin-top:7px;flex:0 0 auto}
-    .section{padding:34px 0}.cred{padding-top:10px}.cred-bar{display:grid;grid-template-columns:220px 1fr;gap:18px;align-items:center;padding:18px 22px;border-radius:26px;background:rgba(255,255,255,.66);border:1px solid var(--line);box-shadow:0 16px 44px rgba(52,47,35,.06)}.cred-label{font:700 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--taupe)}.logo-words{display:flex;flex-wrap:wrap;gap:12px}.logo-words span{padding:12px 14px;border-radius:999px;border:1px solid rgba(36,36,36,.08);background:#fff;font:600 .98rem/1 var(--body);color:var(--ink-soft)}
-    .split{display:grid;grid-template-columns:1.02fr .98fr;gap:18px;align-items:start}.stack{display:grid;gap:16px}.card{padding:24px;border-radius:28px;background:rgba(255,255,255,.8);border:1px solid var(--line);box-shadow:0 12px 30px rgba(52,47,35,.06)}.card.alt{background:linear-gradient(180deg,rgba(245,242,230,.84),rgba(255,255,255,.95))}.mini-title{font:700 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--taupe);margin-bottom:10px}.problem-points,.offer-grid,.authority-grid,.testimonial-grid{display:grid;gap:16px}.problem-points{grid-template-columns:repeat(3,1fr)}.offer-grid{grid-template-columns:1.05fr .95fr}.authority-grid{grid-template-columns:repeat(2,1fr)}.testimonial-grid{grid-template-columns:repeat(3,1fr)}.quote{display:grid;gap:14px;min-height:100%}.quote p{font-size:1rem;color:var(--ink)}.quote footer{color:var(--ink-soft);font-size:.93rem}
-    .mechanism-steps{display:grid;gap:14px}.mechanism-step{display:grid;grid-template-columns:58px 1fr;gap:14px;align-items:start}.step-num{width:58px;height:58px;border-radius:20px;display:grid;place-items:center;background:linear-gradient(135deg,var(--sand-3),rgba(177,214,216,.56));font:700 18px/1 var(--mono);color:var(--teal-deep)}.offer-tag{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(177,214,216,.16);color:var(--teal-deep);font:700 12px/1 var(--body);letter-spacing:.10em;text-transform:uppercase;margin-bottom:12px}.price-box{display:grid;gap:12px;padding:18px;border-radius:24px;background:rgba(255,255,255,.9);border:1px solid rgba(36,36,36,.08)}.price-box strong{font-size:1.3rem}.list{margin:0;padding-left:18px;color:var(--ink-soft)}.list li+li{margin-top:8px}
-    .lead-form{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;align-items:center}.lead-shell{display:grid;gap:10px;padding:18px;border-radius:24px;background:#fff;border:1px solid rgba(36,36,36,.08)}.lead-shell input,.capture input{width:100%;padding:15px 16px;border-radius:999px;border:1px solid rgba(36,36,36,.10);font:500 15px/1 var(--body);background:rgba(252,251,245,.8)}.lead-shell small{color:var(--ink-soft);font-size:.84rem}
-    .quiz-shell{padding:24px;border-radius:32px;background:linear-gradient(180deg,rgba(255,255,255,.92),rgba(245,242,230,.9));border:1px solid rgba(36,36,36,.08);box-shadow:0 24px 64px rgba(52,47,35,.10);position:sticky;top:104px}.quiz-top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px}.quiz-top strong{font-size:1rem}.step{font:700 12px/1 var(--body);letter-spacing:.10em;text-transform:uppercase;color:var(--taupe)}.prog{height:9px;border-radius:999px;background:rgba(36,36,36,.08);overflow:hidden;margin-bottom:18px}.prog>div{height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,var(--ink),var(--teal));transition:width .22s ease}.q{font:600 1.16rem/1.35 var(--body);color:var(--ink);margin-bottom:10px}.opts{display:grid;gap:10px}.opt{width:100%;text-align:left;padding:14px 16px;border-radius:18px;border:1px solid rgba(36,36,36,.12);background:rgba(255,255,255,.88);font:500 .98rem/1.35 var(--body);color:var(--ink);cursor:pointer;transition:border-color .18s ease,transform .18s ease,background .18s ease}.opt:hover{border-color:rgba(49,88,90,.5);background:#fff;transform:translateY(-1px)}.result,.capture{display:none;margin-top:14px;padding:16px;border-radius:22px;background:#fff;border:1px solid rgba(36,36,36,.08)}.result ul{margin:12px 0 0;padding-left:18px;color:var(--ink-soft)}.capture form{display:grid;gap:10px}
-    .footer{padding:28px 0 54px;color:rgba(36,36,36,.62);font-size:13px;text-align:center}.reveal{opacity:0;transform:translateY(14px);animation:rise .7s ease forwards}.delay-1{animation-delay:.06s}.delay-2{animation-delay:.12s}.delay-3{animation-delay:.18s}@keyframes rise{to{opacity:1;transform:none}}
-    @media (max-width:980px){.hero-grid,.split,.offer-grid,.lead-form,.problem-points,.authority-grid,.testimonial-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.cred-bar{grid-template-columns:1fr}.quiz-shell{position:relative;top:auto}.hero-visual img{min-height:280px}.visual-card{margin-top:0}.nav-inner{min-height:72px}.logo-lockup svg{width:148px}.nav-cta .btn-secondary{display:none}}
+    :root{
+      --bg:#08090b;
+      --panel:#111111;
+      --paper:#f4f1ec;
+      --accent:#ef2f23;
+      --link:#00abff;
+      --display:"Antonio", sans-serif;
+      --body:"Poppins", sans-serif;
+      --nav:"Radio Canada Big", sans-serif;
+      --radius-btn:20px;
+      --line: rgba(255,255,255,.12);
+      --muted: rgba(244,241,236,.76);
+      --shadow: 0 12px 34px rgba(0,0,0,.36);
+      --container: 1120px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:var(--body);background:radial-gradient(1200px 700px at 20% 0%, rgba(239,47,35,.14), transparent 55%), var(--bg);color:var(--paper);line-height:1.45}
+    a{color:var(--link);text-decoration:none}
+    .container{max-width:var(--container);margin:0 auto;padding:0 20px}
+    .nav{position:sticky;top:0;z-index:10;background:rgba(8,9,11,.72);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav-inner{height:74px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+    .brand{display:flex;align-items:center;gap:12px;min-width:0}
+    .brand img{height:34px;width:auto}
+    .brand .tag{font-family:var(--nav);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:var(--radius-btn);padding:12px 16px;font-weight:800;border:1px solid rgba(255,255,255,.14);cursor:pointer}
+    .btn-primary{background:linear-gradient(180deg, var(--accent), rgba(214,25,0,1));color:#fff;box-shadow:0 10px 28px rgba(239,47,35,.26)}
+    .btn-ghost{background:transparent;color:var(--paper)}
+    .hero{padding:42px 0 28px}
+    .hero-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:20px;align-items:stretch}
+    .pill{display:inline-flex;gap:10px;align-items:center;padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(17,17,17,.55);font-size:12px;color:var(--muted)}
+    h1{font-family:var(--display);text-transform:uppercase;letter-spacing:.02em;line-height:1.02;margin:16px 0 12px;font-size:clamp(2.2rem,4.8vw,3.4rem)}
+    h2{font-family:var(--display);text-transform:uppercase;letter-spacing:.02em;line-height:1.1;margin:0 0 12px;font-size:clamp(1.55rem,3vw,2.2rem)}
+    .lede{font-size:1.05rem;color:rgba(244,241,236,.9);max-width:66ch}
+    .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+    .panel{background:rgba(17,17,17,.68);border:1px solid rgba(255,255,255,.12);border-radius:18px;box-shadow:var(--shadow)}
+    .hero-card{padding:16px}
+    .kicker{font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:12px;color:rgba(244,241,236,.78)}
+    .hero-card h3{margin:8px 0 8px;font-family:var(--nav);font-size:16px}
+    .hero-card p{margin:0 0 12px;color:rgba(244,241,236,.86)}
+    .mini{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .mini .box{padding:12px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1)}
+    .mini .box strong{display:block;margin-bottom:6px}
+    .hero-img{width:100%;height:260px;object-fit:cover;border-radius:16px;border:1px solid rgba(255,255,255,.12);margin-top:12px}
+    .cred{padding:6px 0 28px}
+    .cred-inner{padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .cred-label{margin:0 0 10px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(244,241,236,.72);font-weight:900}
+    .cred-logos{display:grid;grid-template-columns:repeat(6,minmax(90px,1fr));gap:14px;align-items:center}
+    .cred-logos img{max-width:100%;max-height:34px;object-fit:contain;filter:grayscale(1) opacity(.86)}
+    .section{padding:54px 0}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+    .card{padding:16px;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1)}
+    .card p{margin:8px 0 0;color:rgba(244,241,236,.84)}
+    .quote{padding:16px;border-radius:16px;background:rgba(244,241,236,.06);border:1px solid rgba(255,255,255,.14)}
+    .quote p{margin:0 0 10px}
+    .quote .by{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(244,241,236,.72);font-weight:900}
+    form{display:grid;gap:10px;margin-top:14px}
+    input{width:100%;padding:12px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(8,9,11,.35);color:var(--paper);outline:none}
+    input::placeholder{color:rgba(244,241,236,.6)}
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+    .tier{padding:18px;border-radius:18px;background:rgba(17,17,17,.68);border:1px solid rgba(255,255,255,.12)}
+    .tier .name{font-family:var(--nav);font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+    .tier .price{font-family:var(--display);font-size:30px;margin:10px 0 8px}
+    .tier ul{margin:0;padding-left:18px;color:rgba(244,241,236,.86)}
+    .about{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px;align-items:center}
+    .about img{width:100%;height:320px;object-fit:cover;border-radius:18px;border:1px solid rgba(255,255,255,.12)}
+    .final{padding:60px 0 70px;text-align:center}
+    .final p{max-width:70ch;margin:10px auto 18px;color:rgba(244,241,236,.88)}
+    .footer{padding:26px 0 42px;border-top:1px solid var(--line);text-align:center;color:rgba(244,241,236,.6);font-size:13px}
+    @media (max-width:980px){
+      .hero-grid,.grid2,.cards3,.pricing,.about,.cred-logos{grid-template-columns:1fr}
+      .nav-inner{height:68px}
+      .hero-img{height:220px}
+      .about img{height:260px}
+    }
   </style>
 </head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <a class="logo-lockup" href="https://mynucleus.com" target="_blank" rel="noopener noreferrer" aria-label="Nucleus Genomics">
-        <svg viewBox="0 0 184 36" fill="none" role="img" aria-hidden="true">
-          <path d="M.353 18c0 4.82 2.015 9.501 5.514 12.815C7.586 28.52 12.05 23.267 17.233 20c4.109-2.59 7.545-4.833 10.28-6.901 2.278-1.722 4.018-3.286 5.241-4.783-.287-.437-.593-.86-.916-1.268-1.113 1.447-2.822 3.026-5.233 4.85-2.68 2.025-6.068 4.238-10.175 6.827-.181.115-.362.231-.541.35.625-4.578 3.064-12.176 9.453-17.127A17.582 17.582 0 0 0 18 .353C8.253.353.353 8.253.353 18ZM18 35.647a17.83 17.83 0 0 1-2.137-.128c.951-3.765 1.302-8.003 1.39-10.749-3.787 2.905-6.976 6.694-8.258 8.41-.437-.26-.852-.53-1.264-.826 1.536-2.07 5.861-7.201 10.791-10.31 4.111-2.59 7.625-4.88 10.45-7.017 2.008-1.518 3.706-2.986 5.036-4.463A17.58 17.58 0 0 1 35.647 18c0 9.746-7.901 17.647-17.647 17.647Zm28.6-3.758V4.24h3.716l14.587 18.672V4.241h4.575V31.89h-3.715L51.215 12.967v18.922h-4.614Zm57.329.468c-2.112 0-3.99-.481-5.632-1.444a11.122 11.122 0 0 1-3.871-3.979c-.939-1.665-1.408-3.55-1.408-5.657 0-2.08.469-3.953 1.408-5.618a10.135 10.135 0 0 1 3.871-3.901c1.643-.963 3.52-1.444 5.632-1.444 1.433 0 2.776.26 4.028.78 1.251.495 2.333 1.184 3.245 2.068a8.157 8.157 0 0 1 2.073 3.082l-3.872 1.795a5.561 5.561 0 0 0-2.15-2.614c-.965-.676-2.073-1.014-3.324-1.014-1.2 0-2.282.299-3.246.897-.939.572-1.682 1.391-2.23 2.458-.547 1.04-.82 2.224-.82 3.55 0 1.326.273 2.523.82 3.59.548 1.04 1.291 1.859 2.23 2.457.964.598 2.046.897 3.246.897 1.277 0 2.385-.325 3.324-.975a6.094 6.094 0 0 0 2.15-2.692l3.872 1.834c-.417 1.118-1.095 2.133-2.033 3.043-.913.884-1.995 1.586-3.246 2.107-1.252.52-2.607.78-4.067.78Zm11.905-.468V4.24h4.419v27.65h-4.419Zm37.844.468c-1.591 0-2.986-.351-4.185-1.053a7.63 7.63 0 0 1-2.815-3.005c-.652-1.3-.978-2.796-.978-4.486v-13.03h4.419v12.64c0 .962.195 1.807.587 2.536.391.728.938 1.3 1.642 1.716.704.39 1.512.585 2.425.585.938 0 1.759-.208 2.463-.624a4.28 4.28 0 0 0 1.643-1.755c.417-.755.626-1.639.626-2.653V10.782h4.38V31.89H159.7v-2.607a5.767 5.767 0 0 1-1.994 2.021c-1.147.703-2.49 1.054-4.028 1.054Zm21.603 0c-2.164 0-4.068-.533-5.71-1.6-1.617-1.066-2.751-2.497-3.402-4.291l3.402-1.6c.573 1.197 1.356 2.146 2.346 2.848a5.79 5.79 0 0 0 3.364 1.054c1.042 0 1.89-.235 2.541-.703.652-.468.978-1.105.978-1.911 0-.52-.143-.937-.43-1.249a3.19 3.19 0 0 0-1.095-.819 5.891 5.891 0 0 0-1.291-.468l-3.324-.936c-1.825-.52-3.193-1.301-4.106-2.341-.886-1.067-1.329-2.302-1.329-3.707 0-1.274.325-2.38.977-3.316.652-.962 1.551-1.703 2.699-2.224 1.147-.52 2.437-.78 3.871-.78 1.929 0 3.65.481 5.162 1.444 1.512.936 2.581 2.25 3.207 3.94l-3.402 1.6a5.183 5.183 0 0 0-1.995-2.42c-.886-.598-1.89-.897-3.011-.897-.965 0-1.734.235-2.307.703-.574.442-.861 1.027-.861 1.755 0 .494.131.91.391 1.249.261.312.6.572 1.017.78.417.182.848.338 1.291.468l3.441 1.015c1.747.494 3.09 1.274 4.028 2.34.939 1.04 1.408 2.29 1.408 3.746 0 1.248-.339 2.354-1.017 3.316-.652.936-1.564 1.677-2.737 2.224-1.173.52-2.542.78-4.106.78Zm-94.732 0c-1.59 0-2.985-.351-4.184-1.053-1.2-.729-2.138-1.73-2.816-3.005-.652-1.3-.978-2.796-.978-4.486v-13.03h4.42v12.64c0 .962.195 1.807.586 2.536.39.728.938 1.3 1.642 1.716.704.39 1.512.585 2.425.585.938 0 1.76-.208 2.464-.624a4.278 4.278 0 0 0 1.642-1.755c.417-.755.626-1.639.626-2.653V10.782h4.38V31.89H86.57v-2.607a5.77 5.77 0 0 1-1.994 2.021c-1.147.703-2.49 1.054-4.028 1.054Z" fill="#242424"></path>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M133.613 32.357c-2.112 0-3.989-.481-5.631-1.444a10.507 10.507 0 0 1-3.794-3.979c-.912-1.69-1.368-3.576-1.368-5.657 0-2.133.456-4.018 1.368-5.657.939-1.639 2.19-2.926 3.755-3.862 1.564-.963 3.337-1.444 5.318-1.444 1.59 0 3.011.273 4.263.82 1.251.546 2.307 1.3 3.167 2.262a9.527 9.527 0 0 1 1.956 3.238c.469 1.223.704 2.523.704 3.902 0 .338-.013.689-.039 1.053a5.923 5.923 0 0 1-.157 1.014h-15.748c.051.906.255 1.725.614 2.458.547 1.067 1.303 1.899 2.268 2.497.991.598 2.112.898 3.363.898 1.278 0 2.36-.287 3.246-.859a6.27 6.27 0 0 0 2.151-2.224l3.598 1.756c-.417.988-1.069 1.886-1.956 2.692-.86.78-1.903 1.404-3.128 1.873-1.199.442-2.516.663-3.95.663Zm4.654-15.06c-.417-1.014-1.069-1.807-1.955-2.38-.861-.598-1.878-.897-3.051-.897-1.173 0-2.216.3-3.128.898-.913.572-1.617 1.404-2.112 2.497a6.43 6.43 0 0 0-.503 1.677h11.162a4.843 4.843 0 0 0-.413-1.794Z" fill="#242424"></path>
-        </svg>
-      </a>
-      <div class="nav-cta">
-        <a class="btn btn-secondary" href="https://mynucleus.com/embryo" target="_blank" rel="noopener noreferrer">View Nucleus Embryo</a>
-        <a class="btn btn-primary" href="#quiz">Take The IVF+ Fit Quiz</a>
+      <div class="brand">
+        <img src="https://jaycampbell.com/wp-content/uploads/2024/10/JC-logo-white.png" alt="Jay Campbell" />
+        <div class="tag">Personalized for Nucleus Genomics</div>
       </div>
+      <a class="btn btn-primary" href="#lead">Get the free funnel map</a>
     </div>
   </header>
+
   <main>
     <section class="hero">
       <div class="container hero-grid">
-        <div class="panel hero-copy reveal">
-          <span class="eyebrow">Built from Nucleus live site + public presence</span>
-          <h1>You do not have to make one of the biggest IVF decisions of your life with partial information.</h1>
-          <p class="lede">Nucleus frames the IVF journey as a maze of uncertainty, frustration, and confusion. This funnel turns that tension into a next step: identify whether you need Nucleus Preview, Nucleus Embryo, or an IVF+ clinic consult to give your future child the best possible start in life.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#quiz">See My Personalized Path</a>
-            <a class="btn btn-secondary" href="https://mynucleus.com/ivf/book-a-call" target="_blank" rel="noopener noreferrer">Book A Call</a>
+        <div>
+          <span class="pill">For the team at <strong>Nucleus Genomics</strong> · mynucleus.com</span>
+          <h1>Turn complexity into trust - and trust into conversions.</h1>
+          <p class="lede">Nathan Treff, Ph.D., HCLD Chief Clinical Officer at Nucleus, decades of experience advancing genetic testing in the IVF industry.</p>
+          <p class="lede">Based on your public positioning, the two biggest blockers sound like: (1) Terms of service Privacy policy HIPAA notice Consumer Health Data Privacy Notice California Privacy Notice Origin License Agreement (2) Prospects hesitate when trust, privacy, and "what do I do next?" aren't crystal clear.. Let's turn those into a clear path to <strong>Jeff Wang, MD Medical Director at Neway Fertility, renowned in reproductive medicine, providing personalized care and empowering patients throughout their IVF journey.</strong> and <strong>Medical Director at Neway Fertility, renowned in reproductive medicine, providing personalized care and empowering patients throughout their IVF journey.</strong>.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#offer">See the offer</a>
+            <a class="btn btn-ghost" href="#book">Book a call</a>
           </div>
-          <div class="metrics">
-            <div class="metric"><strong>2,000+</strong>hereditary conditions screened through Nucleus Preview.</div>
-            <div class="metric"><strong>Up to 20</strong>embryos compared with Nucleus Embryo.</div>
-            <div class="metric"><strong>99.9%</strong>reported sequencing accuracy with domestic U.S. processing.</div>
-          </div>
+          <img class="hero-img" src="https://jaycampbell.com/wp-content/uploads/2024/10/JC-logo-white.png" alt="Client profile" loading="eager" />
         </div>
-        <div class="panel hero-visual reveal delay-1">
-          <img src="https://framerusercontent.com/assets/SukS0ycdkmOsIvjJ6SU8nyxoQ.png" alt="Nucleus IVF+ clinic network" />
-          <div class="visual-card">
-            <div class="label">Why this funnel converts</div>
-            <div class="signal-list">
-              <div class="signal"><span class="dot"></span><div><b>Problem-aware:</b> speaks to people who feel overwhelmed by different doctors, different opinions, and scattered reports.</div></div>
-              <div class="signal"><span class="dot"></span><div><b>Mechanism-led:</b> positions Preview + Embryo + IVF+ as one connected path instead of fragmented testing.</div></div>
-              <div class="signal"><span class="dot"></span><div><b>Authority-backed:</b> leans on Nucleus scientists, clinic partners, press kit mentions, and safety credentials.</div></div>
+        <aside class="panel hero-card">
+          <div class="kicker">Quick Audit Snapshot</div>
+          <h3>What we'll fix first</h3>
+          <p>We mirror your audience language, tighten credibility, and move visitors to one "next step" (email capture or consult).</p>
+          <div class="mini">
+            <div class="box">
+              <strong>Message</strong>
+              <div>Use your words, not generic claims.</div>
+            </div>
+            <div class="box">
+              <strong>Trust</strong>
+              <div>Privacy + proof at the right moment.</div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="section cred">
-      <div class="container">
-        <div class="cred-bar reveal delay-1">
-          <div class="cred-label">As seen in / featured on public Nucleus press pages</div>
-          <div class="logo-words"><span>The Wall Street Journal</span><span>TechCrunch</span><span>Illumina</span><span>New Scientist</span><span>Vanity Fair</span><span>CNBC</span><span>Mendelspod</span><span>Pirate Wires Podcast</span></div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container split">
-        <div class="stack">
-          <div class="card alt reveal">
-            <div class="mini-title">Problem Agitation</div>
-            <h2>The IVF journey is already emotionally loaded. Partial genetics makes it heavier.</h2>
-            <p class="lede">Nucleus repeatedly hits the same nerve in its own copy: hopeful parents are trying to make thoughtful decisions while juggling uncertainty, fragmented lab data, and incomplete screening.</p>
-          </div>
-          <div class="problem-points">
-            <div class="card reveal delay-1">“The launch of Nucleus Embryo sparked intense debate… parents wanted a better IVF experience.” That means your prospect is already carrying skepticism, information overload, and urgency.</div>
-            <div class="card reveal delay-2">“Clinics don’t have the full picture of your embryos. Yet they choose one for you.” That is the emotional wedge this page uses to create demand.</div>
-            <div class="card reveal delay-3">“Standard tests only catch a fraction of what matters.” Nucleus wins by reframing default IVF genetics as incomplete, not premium enough.</div>
-          </div>
-        </div>
-        <aside class="quiz-shell reveal delay-2" id="quiz">
-          <div class="quiz-top"><strong>IVF+ Fit Quiz</strong><span class="step" id="stepLabel">Step 1 of 8</span></div>
-          <div class="prog"><div id="bar"></div></div>
-          <div class="q" id="question"></div>
-          <div class="opts" id="options"></div>
-          <div class="result" id="result"><h3 id="resultTitle" style="margin-top:0"></h3><p id="resultBody"></p><ul id="resultBullets"></ul></div>
-          <div class="capture" id="capture">
-            <p><strong>Send me my result + Nucleus IVF+ Readiness Blueprint</strong></p>
-            <form onsubmit="event.preventDefault(); alert('Captured. Connect this form to your CRM or scheduler.');">
-              <input required placeholder="First name" />
-              <input required type="email" placeholder="Email" />
-              <button class="btn btn-primary" type="submit">Unlock My Plan</button>
-            </form>
-          </div>
+          <img class="hero-img" style="height:170px;margin-top:12px" src="https://logo.clearbit.com/mynucleus.com" alt="Nucleus Genomics logo" loading="lazy" />
         </aside>
       </div>
     </section>
+
+<section class="cred"><div class="container"><div class="cred-inner"><p class="cred-label">As Featured In</p><div class="cred-logos"><img src="https://jaycampbell.com/wp-content/uploads/2025/01/forbes-logo-150x37.webp" alt="Media logo" loading="lazy" /><img src="https://jaycampbell.com/wp-content/uploads/2025/01/ABC-logo-MConverter.eu_-150x84.webp" alt="Media logo" loading="lazy" /><img src="https://jaycampbell.com/wp-content/uploads/2025/01/espn-940-radio-logo-16585s62-1-150x55.webp" alt="Media logo" loading="lazy" /><img src="https://jaycampbell.com/wp-content/uploads/2025/01/Logo-Fox-News-264192247-1-150x106.webp" alt="Media logo" loading="lazy" /><img src="https://jaycampbell.com/wp-content/uploads/2025/01/NBC-logo-150x84.webp" alt="Media logo" loading="lazy" /></div></div></div></section>
+
     <section class="section">
-      <div class="container card alt reveal">
-        <div class="mini-title">Solution / Mechanism</div>
-        <h2>Nucleus wins by turning isolated tests into a complete “best start in life” decision system.</h2>
-        <div class="mechanism-steps">
-          <div class="mechanism-step"><div class="step-num">01</div><div><h3>Nucleus Preview</h3><p class="lede">Whole-genome carrier screening for couples before pregnancy. The live site promises screening for 2,000+ hereditary conditions, partner syncing, and optional 1:1 counseling.</p></div></div>
-          <div class="mechanism-step"><div class="step-num">02</div><div><h3>Nucleus Embryo</h3><p class="lede">Embryo analysis layered on top of existing PGT results so intended parents can compare up to 20 embryos across hereditary risk, chronic conditions, and additional traits beyond basic viability.</p></div></div>
-          <div class="mechanism-step"><div class="step-num">03</div><div><h3>Nucleus IVF+</h3><p class="lede">An end-to-end clinic experience positioned around transparency, personalized care, and advanced genetic medicine through partners like Beverly Hills Fertility, Neway Fertility, and Clínica de la Fertilidad.</p></div></div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="mini-title">Social Proof</div>
-        <h2 class="reveal">Real language Nucleus already uses to create belief.</h2>
-        <div class="testimonial-grid">
-          <div class="card quote reveal"><p>“The obvious answer to us was, we wanted to start with the one embryo that was most likely to grow up to be a healthy adult… We concluded that Nucleus was the one and only company that best reflected our values and that best reflected the state of the art.”</p><footer>First Nucleus Embryo couple</footer></div>
-          <div class="card quote reveal delay-1"><p>“Just found that my genetic risk of diabetes is higher than 99.9% who share the same ancestry as me. This stuff is priceless.”</p><footer>Yasir A</footer></div>
-          <div class="card quote reveal delay-2"><p>“I discovered I was at a very high risk for a condition I’d never even heard of-Hereditary Hemochromatosis-which would ultimately change my life.”</p><footer>Ethan C</footer></div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container offer-grid">
-        <div class="card alt reveal">
-          <div class="mini-title">Lead Magnet</div>
-          <h2>The logical opt-in is not “learn more.” It’s “help me make the right choice before I commit.”</h2>
-          <div class="lead-form">
-            <div><p class="lede">This page offers a <strong>Nucleus IVF+ Readiness Blueprint</strong>: a short pre-consult guide covering what to ask your clinic, what your existing PGT results can and cannot tell you, and whether you should start with Preview, Embryo, or a clinic call.</p></div>
-            <div class="lead-shell"><input placeholder="Your email" /><button class="btn btn-primary" type="button">Send My Blueprint</button><small>Mirror Nucleus’ “Join the movement” / “Join” email capture behavior until a live CRM endpoint is connected.</small></div>
+      <div class="container grid2">
+        <div>
+          <h2>The problem (in your audience's head)</h2>
+          <div class="card">
+            <div class="kicker">Pulled from your public copy</div>
+            <p>Terms of service Privacy policy HIPAA notice Consumer Health Data Privacy Notice California Privacy Notice Origin License Agreement</p>
+            <p style="margin-top:10px">Prospects hesitate when trust, privacy, and "what do I do next?" aren't crystal clear.</p>
           </div>
         </div>
-        <div class="stack">
-          <div class="card reveal delay-1"><div class="offer-tag">Offer Snapshot</div><h3>Nucleus Preview</h3><div class="price-box"><strong>Starting at $499</strong><span>Official site copy: “One swab. All your DNA… Starting at $499.”</span><ul class="list"><li>Carrier screening for 2,000+ conditions</li><li>Partner sync and optional 1:1 genetic counseling</li><li>Results in 4-6 weeks</li><li>HSA/FSA eligible</li></ul></div></div>
-          <div class="card reveal delay-2"><div class="offer-tag">High-Ticket Path</div><h3>Nucleus Embryo + IVF+</h3><p class="lede">Pricing is application / consult-led. The live offer is framed around clinic partnership, advanced embryo analysis, and a premium patient-first IVF journey rather than public self-serve checkout.</p><div style="margin-top:14px"><a class="btn btn-primary" href="https://mynucleus.com/ivf/book-a-call" target="_blank" rel="noopener noreferrer">Book IVF+ Call</a></div></div>
+        <div>
+          <h2>What a high-trust funnel does</h2>
+          <div class="cards3" style="margin-top:0">
+            <div class="card"><strong>Clarifies</strong><p>One sentence promise, one next step, zero confusion.</p></div>
+            <div class="card"><strong>Proves</strong><p>Credibility where skepticism peaks: methodology, privacy, and authority.</p></div>
+            <div class="card"><strong>Captures</strong><p>Lead magnet for "not yet" visitors, consult CTA for "ready now".</p></div>
+          </div>
         </div>
       </div>
     </section>
-    <section class="section">
-      <div class="container split">
-        <div class="card alt reveal">
-          <div class="mini-title">Authority / About</div>
-          <h2>Nucleus sells bold genetics, but it backs the pitch with clinical and scientific names.</h2>
-          <p class="lede">The authority stack on Nucleus’ live site includes Chief Clinical Officer Nathan Treff, Chief Scientific Officer Lasse Folkersen, former Stanford genetics communicator Barry Starr, and former Myriad CSO Jerry Lanchbury, alongside physician partners from Beverly Hills Fertility, Neway Fertility, and Clínica de la Fertilidad.</p>
-          <div class="authority-grid" style="margin-top:16px"><div class="price-box"><strong>Safety by design</strong><span>HIPAA-compliant, CLIA-certified, CAP-accredited, 2-factor authentication, domestic sequencing, anonymous samples.</span></div><div class="price-box"><strong>Research narrative</strong><span>Nucleus Labs positions Origin as a family of predictive models trained and validated on millions of people across diverse ancestries.</span></div></div>
-        </div>
-        <div class="stack">
-          <div class="card reveal delay-1"><div class="mini-title">Voice Match</div><p class="lede">Nucleus does not sound clinical and cautious in the usual biotech way. The brand voice is direct, provocative, future-facing, and unapologetically aspirational: “Have your best baby,” “The choice is yours,” and “It’s yours.”</p></div>
-          <div class="card reveal delay-2"><div class="mini-title">Objections handled</div><ul class="list"><li><strong>“This feels controversial.”</strong> Reframe around transparency, thoughtful choice, and peace of mind.</li><li><strong>“My clinic already does testing.”</strong> Stress that standard testing catches only a fraction of what matters.</li><li><strong>“I’m not ready for Embryo yet.”</strong> Route to Preview or a consult instead of forcing one offer.</li><li><strong>“Can I trust the data?”</strong> Use the safety and clinical standards block early and often.</li></ul></div>
+
+    <section class="section" id="social-proof">
+      <div class="container">
+        <h2>Social proof</h2>
+        <div class="grid2">
+          <div class="quote"><p>&gt;Privacy policy&lt;/a&gt;&lt;!--/$--&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=</p><div class="by">Public testimonial / quote</div></div>
+          <div class="quote"><p>./privacy-policy#consumer-health-privacy-notice</p><div class="by">Public testimonial / quote</div></div>
+          <div class="quote"><p>./privacy-policy#california-privacy-notice</p><div class="by">Public testimonial / quote</div></div>
+          <div class="quote"><p>"If you want high-intent leads, you need a page that reads like the customer's internal dialogue."</p><div class="by">Jay Campbell team</div></div>
         </div>
       </div>
     </section>
+
+    <section class="section" id="lead">
+      <div class="container grid2">
+        <div>
+          <h2>Free lead magnet: Funnel Map</h2>
+          <p class="lede">A one-page map of the messaging, credibility stack, and CTA flow we'd use for Nucleus Genomics - using your language and objections.</p>
+          <div class="card">
+            <div class="kicker">Includes</div>
+            <p style="margin:8px 0 0">• Hero promise + subhead variants<br/>• Credibility bar + proof timing<br/>• Lead magnet angle + email capture copy<br/>• Offer framing + CTA flow</p>
+          </div>
+        </div>
+        <div class="panel hero-card">
+          <div class="kicker">Send it to me</div>
+          <h3>Get the Funnel Map</h3>
+          <p>Connect this form to your CRM webhook. This page is intentionally "static-first".</p>
+          <form onsubmit="event.preventDefault(); alert('Lead captured (placeholder). Wire this to your CRM/webhook.');">
+            <input required placeholder="First name" />
+            <input required type="email" placeholder="Work email" />
+            <button class="btn btn-primary" type="submit">Send my map</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="offer">
+      <div class="container">
+        <h2>Offer & pricing</h2>
+        <p class="lede">If you already publish pricing, we'll align to it (Custom depending on scope.). If not, we'll keep the funnel focused on trust and next steps.</p>
+        <div class="pricing">
+          <div class="tier">
+            <div class="name">Funnel Map</div>
+            <div class="price">$0</div>
+            <ul>
+              <li>Personalized landing page outline</li>
+              <li>Copy angles pulled from your public positioning</li>
+              <li>CTA recommendation (lead vs consult)</li>
+            </ul>
+          </div>
+          <div class="tier" style="border-color:rgba(239,47,35,.5)">
+            <div class="name">Funnel Sprint</div>
+            <div class="price">$X,XXX</div>
+            <ul>
+              <li>High-converting single-page funnel</li>
+              <li>Email capture + follow-up sequence draft</li>
+              <li>Analytics + conversion checklist</li>
+            </ul>
+          </div>
+          <div class="tier">
+            <div class="name">Done-With-You</div>
+            <div class="price">Custom</div>
+            <ul>
+              <li>Iterate copy + creative weekly</li>
+              <li>Landing page + paid traffic feedback loop</li>
+              <li>Conversion rate optimization roadmap</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
-      <div class="container card alt reveal">
-        <div class="mini-title">Final CTA</div>
-        <h2>Future parents do not want more debate. They want a clearer next step.</h2>
-        <p class="lede">Use this quiz-first funnel to segment high-intent IVF leads, capture early-stage Preview interest, and move the best-fit families into a Nucleus Embryo or IVF+ conversation with more urgency and more trust.</p>
-        <div class="hero-actions" style="margin-top:22px"><a class="btn btn-primary" href="#quiz">Get My Personalized Recommendation</a><a class="btn btn-secondary" href="https://mynucleus.com/ivf/book-a-call" target="_blank" rel="noopener noreferrer">Apply / Book A Call</a></div>
+      <div class="container about">
+        <img src="https://jaycampbell.com/wp-content/uploads/2024/10/JC-logo-white.png" alt="Jay Campbell" loading="lazy" />
+        <div>
+          <h2>Authority</h2>
+          <p class="lede">This page uses the JayCampbell.com brand system and your public language to show what a personalized outreach funnel can look like - elevated, not off-brand.</p>
+          <div class="card">
+            <div class="kicker">Next step</div>
+            <p style="margin:8px 0 0">If this resonates, we'll build the live version with your team's input and the exact conversion goal you care about.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final" id="book">
+      <div class="container">
+        <h2>Want this built for real?</h2>
+        <p>Book a 15-minute call and we'll walk through the Funnel Map, identify the 2-3 leverage points, and decide if a sprint makes sense.</p>
+        <div class="cta-row" style="justify-content:center">
+          <a class="btn btn-primary" href="__BOOKING_LINK__" target="_blank" rel="noopener noreferrer">Book a call</a>
+          <a class="btn btn-ghost" href="https://mynucleus.com" target="_blank" rel="noopener noreferrer">Visit Nucleus Genomics</a>
+        </div>
+        <p style="margin-top:14px;color:rgba(244,241,236,.62);font-size:13px">Replace <code>__BOOKING_LINK__</code> with your calendar link.</p>
       </div>
     </section>
   </main>
-  <footer class="footer">Generated from Nucleus public site copy, public press/press-kit pages, and public search results. Verify medical, ethical, and compliance language before paid distribution.</footer>
-  <script>
-    const questions=[
-      {q:"Where are you in the family-planning process?",o:["Actively doing IVF","Planning IVF soon","Trying before IVF","Just researching options"]},
-      {q:"What would give you the most peace of mind right now?",o:["More clarity on embryo selection","Knowing hereditary risks before pregnancy","A better clinic + support path","Understanding whether this is worth it"]},
-      {q:"Do you already have embryo or PGT results?",o:["Yes, multiple embryos","Yes, but limited information","Not yet","No, and I am not there yet"]},
-      {q:"Which frustration sounds most familiar?",o:["Different doctors, different opinions","Standard testing feels incomplete","I want a more modern IVF experience","I am worried this is too much / too early"]},
-      {q:"What matters most in your decision?",o:["Reducing disease risk","Choosing with more complete data","Feeling supported end to end","Starting with the smartest first step"]},
-      {q:"How soon would you move if the offer fit?",o:["This week","This month","Next quarter","Still gathering information"]},
-      {q:"How important is clinical legitimacy?",o:["Non-negotiable","Very important","Important, but not the only factor","I mainly care about outcomes"]},
-      {q:"What do you want the page to recommend?",o:["Nucleus Embryo","Nucleus Preview","IVF+ clinic call","Whichever path fits me best"]}
-    ];
-    const state={step:0,embryo:0,preview:0,clinic:0,urgency:0};
-    const questionEl=document.getElementById('question');
-    const optionsEl=document.getElementById('options');
-    const stepLabelEl=document.getElementById('stepLabel');
-    const barEl=document.getElementById('bar');
-    const resultEl=document.getElementById('result');
-    const resultTitleEl=document.getElementById('resultTitle');
-    const resultBodyEl=document.getElementById('resultBody');
-    const resultBulletsEl=document.getElementById('resultBullets');
-    const captureEl=document.getElementById('capture');
-    function score(stepIndex,optionIndex){if(stepIndex===0){if(optionIndex===0)state.embryo+=2;if(optionIndex===1)state.clinic+=2;if(optionIndex>=2)state.preview+=2}if(stepIndex===1){if(optionIndex===0)state.embryo+=2;if(optionIndex===1)state.preview+=2;if(optionIndex===2)state.clinic+=2}if(stepIndex===2){if(optionIndex<=1)state.embryo+=3;if(optionIndex>=2)state.preview+=1}if(stepIndex===3){if(optionIndex===0||optionIndex===2)state.clinic+=2;if(optionIndex===1)state.embryo+=2;if(optionIndex===3)state.preview+=1}if(stepIndex===4){if(optionIndex===0)state.preview+=2;if(optionIndex===1)state.embryo+=2;if(optionIndex===2)state.clinic+=2;if(optionIndex===3){state.preview+=1;state.clinic+=1}}if(stepIndex===5){state.urgency+=optionIndex===0?3:optionIndex===1?2:optionIndex===2?1:0}if(stepIndex===6&&optionIndex<=1){state.preview+=1;state.embryo+=1;state.clinic+=1}if(stepIndex===7){if(optionIndex===0)state.embryo+=2;if(optionIndex===1)state.preview+=2;if(optionIndex===2)state.clinic+=2}}
-    function buildResult(){let persona='Preview First';if(state.embryo>=state.preview&&state.embryo>=state.clinic)persona='Embryo Optimizer';else if(state.clinic>=state.preview&&state.clinic>=state.embryo)persona='IVF+ Concierge Fit';let body='You are not looking for more hype. You are looking for a smarter first step before pregnancy or IVF begins.';let bullets=['Start with Nucleus Preview to screen hereditary risks and sync partner results.','Use the readiness blueprint before booking your consult.','Move into Embryo or IVF+ only when your timeline and clinic path are clear.'];if(persona==='Embryo Optimizer'){body='Your answers point to Nucleus Embryo as the strongest fit. You want more than viability alone and you are close enough to IVF to act on richer embryo data.';bullets=['Bring your existing embryo / PGT results into the next conversation.','Book a Nucleus call to confirm clinic compatibility and timing.','Use Preview alongside Embryo if you still need hereditary risk clarity.']}else if(persona==='IVF+ Concierge Fit'){body='Your highest-value move is an IVF+ clinic conversation. You want modern care, more transparency, and a team that can integrate genetics into the full journey.';bullets=['Book an IVF+ consultation while urgency is still high.','Ask specifically about clinic partners and how Embryo fits into your cycle.','Use the blueprint to compare your current clinic experience to the IVF+ promise.']}if(state.urgency>=4){bullets.unshift('You appear high-intent. Prioritize a consult in the next 7 days.')}resultTitleEl.textContent='Your Result: '+persona;resultBodyEl.textContent=body;resultBulletsEl.innerHTML=bullets.map(item=>'<li>'+item+'</li>').join('')}
-    function render(){if(state.step>=questions.length){questionEl.textContent='Your personalized Nucleus recommendation is ready.';optionsEl.innerHTML='';stepLabelEl.textContent='Complete';barEl.style.width='100%';buildResult();resultEl.style.display='block';captureEl.style.display='block';return}const item=questions[state.step];stepLabelEl.textContent='Step '+(state.step+1)+' of '+questions.length;barEl.style.width=((state.step/questions.length)*100)+'%';questionEl.textContent=item.q;optionsEl.innerHTML=item.o.map((option,index)=>'<button class="opt" type="button" data-index="'+index+'">'+option+'</button>').join('');optionsEl.querySelectorAll('button').forEach((button)=>{button.addEventListener('click',()=>{const optionIndex=Number(button.getAttribute('data-index'));score(state.step,optionIndex);state.step+=1;render()})})}
-    render();
-  </script>
+
+  <footer class="footer">
+    <div class="container">
+      <div>Personalized concept page for Nucleus Genomics. Built from public information; verify claims and permissions before using in production.</div>
+    </div>
+  </footer>
 </body>
 </html>
