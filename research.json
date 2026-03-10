@@ -1,0 +1,172 @@
+﻿{
+  "business_name": "Nucleus Genomics",
+  "domain": "mynucleus.com",
+  "repo_name": "nucleus-genomics-funnel",
+  "positioning": {
+    "headline": "Have your best baby.",
+    "supporting_lines": [
+      "Build generational health.",
+      "The future of IVF for clinics.",
+      "The all inclusive IVF package to give your child the best start in life.",
+      "Nucleus Embryo: The choice is yours."
+    ],
+    "voice": "Direct, provocative, future-facing, premium, and unapologetically aspirational."
+  },
+  "core_offers": [
+    {
+      "name": "Nucleus Preview",
+      "type": "Preconception / carrier screening",
+      "details": [
+        "Preview your future child's health, traits and potential before pregnancy begins.",
+        "Screen for 2000+ conditions.",
+        "Partner sync and option for 1:1 genetic counseling.",
+        "Results in 4-6 weeks.",
+        "HSA/FSA eligible."
+      ],
+      "pricing": "Official site copy says starting at $499 on the What's Included page. Preview shop page contains unresolved dynamic pricing tokens."
+    },
+    {
+      "name": "Nucleus Embryo",
+      "type": "Embryo analysis for IVF",
+      "details": [
+        "Analyze and compare up to 20 embryos.",
+        "Works with existing PGT lab results.",
+        "Claims 2000+ hereditary conditions plus 40 additional analyses beyond basic viability."
+      ],
+      "pricing": "Consult / application led via IVF+ and clinic pathways."
+    },
+    {
+      "name": "Nucleus IVF+",
+      "type": "Clinic network / concierge IVF pathway",
+      "details": [
+        "End-to-end IVF experience from consultation through birth.",
+        "Positioned around more transparency, more personalized care, and advanced genetic medicine.",
+        "Partner clinics include Beverly Hills Fertility, Neway Fertility, and Clínica de la Fertilidad."
+      ],
+      "pricing": "Book a call / apply."
+    },
+    {
+      "name": "Nucleus Health",
+      "type": "Whole-genome health test",
+      "details": [
+        "The best whole-genome test.",
+        "1000x more DNA sequenced than microarray-style consumer tests.",
+        "Health, traits, and disease-risk analysis."
+      ],
+      "pricing": "Official site copy says starting at $499."
+    }
+  ],
+  "audience": {
+    "primary": "Future parents and IVF patients who want more control, more data, and more peace of mind before choosing an embryo or clinic path.",
+    "secondary": "Couples who want carrier screening and genetic counseling before pregnancy.",
+    "clinic": "Fertility clinics evaluating whether to join the IVF+ network."
+  },
+  "pain_points": [
+    "The IVF journey feels like a maze of uncertainty, frustration, and confusion.",
+    "Different doctors, different opinions, and future-child health data scattered across reports.",
+    "Standard tests only catch a fraction of what matters.",
+    "Patients want a better IVF experience, not just another lab report."
+  ],
+  "desires": [
+    "Give your child the best possible start in life.",
+    "Make thoughtful choices about your future baby.",
+    "Reduce disease risk and gain more transparency.",
+    "Feel peace of mind with more complete genetic information."
+  ],
+  "unique_mechanism": [
+    "Whole-genome screening + partner syncing + embryo analysis + clinic integration.",
+    "Preview + Embryo + IVF+ repositioned as one connected decision system.",
+    "Origin research models and open-weight benchmark framing used as scientific credibility."
+  ],
+  "authority": {
+    "clinical_and_scientific": [
+      "Nathan Treff, Ph.D., HCLD - Chief Clinical Officer",
+      "Lasse Folkersen, Ph.D. - Chief Scientific Officer",
+      "Barry Starr, Ph.D. - Director of Scientific Communications",
+      "Jerry Lanchbury, Ph.D. - Scientific Advisory Board / former Myriad CSO"
+    ],
+    "clinic_partners": [
+      "Beverly Hills Fertility",
+      "Neway Fertility",
+      "Clínica de la Fertilidad"
+    ],
+    "press": [
+      "The Wall Street Journal",
+      "TechCrunch",
+      "Illumina",
+      "New Scientist",
+      "Vanity Fair",
+      "CNBC"
+    ],
+    "investors": [
+      "776 Fund",
+      "Founders Fund",
+      "Thiel Foundation",
+      "Quiet Capital"
+    ],
+    "safety": [
+      "HIPAA-compliant",
+      "CLIA-certified",
+      "CAP-accredited",
+      "2-factor authentication",
+      "Domestic U.S. sequencing",
+      "Anonymous samples"
+    ]
+  },
+  "testimonials": [
+    {
+      "quote": "The obvious answer to us was, we wanted to start with the one embryo that was most likely to grow up to be a healthy adult.",
+      "name": "First Nucleus Embryo couple"
+    },
+    {
+      "quote": "We concluded that Nucleus was the one and only company that best reflected our values and that best reflected the state of the art.",
+      "name": "First Nucleus Embryo couple"
+    },
+    {
+      "quote": "Just found that my genetic risk of diabetes is higher than 99.9% who share the same ancestry as me. This stuff is priceless.",
+      "name": "Yasir A"
+    },
+    {
+      "quote": "Nucleus confirmed the knowledge I already have about my family history, but I also found out that I'm at elevated risk for coronary artery disease, insomnia, and multiple sclerosis.",
+      "name": "Maxx Y"
+    },
+    {
+      "quote": "I discovered I was at a very high risk for a condition I'd never even heard of-Hereditary Hemochromatosis-which would ultimately change my life.",
+      "name": "Ethan C"
+    }
+  ],
+  "brand": {
+    "heading_font": "Merriweather",
+    "body_font": "Space Grotesk",
+    "accent_font": "Fragment Mono",
+    "colors": {
+      "ink": "#242424",
+      "sand": "#fcfbf5",
+      "sand_2": "#f5f2e6",
+      "sand_3": "#ece9d9",
+      "taupe": "#8e8564",
+      "teal": "#719c9e",
+      "teal_deep": "#31585a",
+      "accent": "#deb15c"
+    }
+  },
+  "assets": {
+    "logo_type": "Inline SVG wordmark copied from live page source",
+    "hero_image": "https://framerusercontent.com/assets/SukS0ycdkmOsIvjJ6SU8nyxoQ.png",
+    "home_og_image": "https://framerusercontent.com/images/YMLAovb0atdYnGpPeQ2ztSMR0w.jpg",
+    "social_links": [
+      "https://www.instagram.com/nucleusgenomics/",
+      "https://x.com/nucleusgenomics",
+      "https://www.linkedin.com/company/nucleusgenomics/mycompany/",
+      "https://www.tiktok.com/@nucleusgenomics",
+      "https://www.youtube.com/@nucleusgenomics"
+    ]
+  },
+  "public_presence_signals": [
+    "DuckDuckGo surfaced a CBS Mornings interview with founder Kian Sadeghi from December 3, 2025.",
+    "DuckDuckGo surfaced Instagram with 17K followers.",
+    "DuckDuckGo surfaced an August 16, 2024 Sourcery interview with founder Kian Sadeghi.",
+    "DuckDuckGo surfaced Axios coverage of a $14M Series A announced January 30, 2025.",
+    "DuckDuckGo surfaced TechCrunch coverage tying Nucleus to Founders Fund backing."
+  ]
+}
